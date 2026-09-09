@@ -1,1 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>NewsForge | AI News Intelligence</title>
+
+    <meta
+        name="description"
+        content="NewsForge is an AI-powered news intelligence and automated publishing platform."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- App Shell -->
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-mark">N</div>
+
+                <div class="brand-info">
+                    <h1>NewsForge</h1>
+                    <span>AI News Intelligence</span>
+                </div>
+            </div>
+
+
+            <!-- Main Navigation -->
+            <nav class="navigation">
+
+                <div class="nav-section">
+                    <span class="nav-label">MAIN</span>
+
+                    <a href="#" class="nav-item active">
+                        <span class="nav-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◉</span>
+                        <span>Live News</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">▤</span>
+                        <span>Stories</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">↗</span>
+                        <span>Trending</span>
+                    </a>
+                </div>
+
+
+                <div class="nav-section">
+                    <span class="nav-label">AI ENGINE</span>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">✓</span>
+                        <span>Verification</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">✦</span>
+                        <span>AI Analysis</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">✎</span>
+                        <span>Content Studio</span>
+                    </a>
+                </div>
+
+
+                <div class="nav-section">
+                    <span class="nav-label">PUBLISH</span>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◷</span>
+                        <span>Publishing Queue</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">▣</span>
+                        <span>Published</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◫</span>
+                        <span>Scheduler</span>
+                    </a>
+                </div>
+
+
+                <div class="nav-section">
+                    <span class="nav-label">SYSTEM</span>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◎</span>
+                        <span>Sources</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◈</span>
+                        <span>Categories</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+                </div>
+
+            </nav>
+
+
+            <!-- System Status -->
+            <div class="sidebar-status">
+
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+
+                    <div>
+                        <strong>System Operational</strong>
+                        <small>All services running</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Bar -->
+            <header class="topbar">
+
+                <div class="page-context">
+                    <span class="breadcrumb">Workspace /</span>
+                    <strong>Dashboard</strong>
+                </div>
+
+
+                <div class="topbar-actions">
+
+                    <div class="search-box">
+                        <span class="search-icon">⌕</span>
+                        <input
+                            type="search"
+                            placeholder="Search stories..."
+                            aria-label="Search stories"
+                        >
+                        <span class="search-shortcut">/</span>
+                    </div>
+
+                    <button class="icon-button" aria-label="Notifications">
+                        ♢
+                    </button>
+
+                    <button class="profile-button" aria-label="User profile">
+                        <span class="avatar">A</span>
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- Dashboard -->
+            <section class="dashboard">
+
+                <!-- Page Heading -->
+                <div class="dashboard-heading">
+
+                    <div>
+                        <span class="eyebrow">NEWS INTELLIGENCE</span>
+
+                        <h2>Dashboard</h2>
+
+                        <p>
+                            Monitor, verify, analyze and publish the latest news.
+                        </p>
+                    </div>
+
+                    <div class="dashboard-actions">
+                        <button class="secondary-button">
+                            Refresh
+                        </button>
+
+                        <button class="primary-button">
+                            + Add Source
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <!-- Overview Stats -->
+                <section class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <div class="stat-header">
+                            <span>Stories Collected</span>
+                            <span class="stat-icon">◉</span>
+                        </div>
+
+                        <div class="stat-value">1,248</div>
+
+                        <div class="stat-meta positive">
+                            ↑ 12.4%
+                            <span>vs yesterday</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-header">
+                            <span>Verified Stories</span>
+                            <span class="stat-icon">✓</span>
+                        </div>
+
+                        <div class="stat-value">428</div>
+
+                        <div class="stat-meta positive">
+                            ↑ 8.7%
+                            <span>verification rate</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-header">
+                            <span>AI Processing</span>
+                            <span class="stat-icon">✦</span>
+                        </div>
+
+                        <div class="stat-value">36</div>
+
+                        <div class="stat-meta neutral">
+                            Currently processing
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-header">
+                            <span>Published Today</span>
+                            <span class="stat-icon">▣</span>
+                        </div>
+
+                        <div class="stat-value">18</div>
+
+                        <div class="stat-meta positive">
+                            ↑ 5
+                            <span>from last hour</span>
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- Main Dashboard Grid -->
+                <div class="dashboard-grid">
+
+
+                    <!-- AI Pipeline -->
+                    <section class="panel pipeline-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <span class="panel-eyebrow">AUTOMATION</span>
+                                <h3>AI Pipeline</h3>
+                            </div>
+
+                            <span class="live-badge">
+                                <span></span>
+                                LIVE
+                            </span>
+
+                        </div>
+
+
+                        <div class="pipeline">
+
+                            <div class="pipeline-step completed">
+                                <span class="pipeline-number">01</span>
+
+                                <div class="pipeline-info">
+                                    <strong>Discover</strong>
+                                    <small>124 new stories</small>
+                                </div>
+
+                                <span class="pipeline-status">✓</span>
+                            </div>
+
+
+                            <div class="pipeline-line"></div>
+
+
+                            <div class="pipeline-step completed">
+                                <span class="pipeline-number">02</span>
+
+                                <div class="pipeline-info">
+                                    <strong>Deduplicate</strong>
+                                    <small>87 unique stories</small>
+                                </div>
+
+                                <span class="pipeline-status">✓</span>
+                            </div>
+
+
+                            <div class="pipeline-line"></div>
+
+
+                            <div class="pipeline-step processing">
+                                <span class="pipeline-number">03</span>
+
+                                <div class="pipeline-info">
+                                    <strong>Verify</strong>
+                                    <small>52 stories processing</small>
+                                </div>
+
+                                <span class="pipeline-status">●</span>
+                            </div>
+
+
+                            <div class="pipeline-line"></div>
+
+
+                            <div class="pipeline-step">
+                                <span class="pipeline-number">04</span>
+
+                                <div class="pipeline-info">
+                                    <strong>Analyze & Rank</strong>
+                                    <small>Waiting for verification</small>
+                                </div>
+
+                                <span class="pipeline-status">○</span>
+                            </div>
+
+
+                            <div class="pipeline-line"></div>
+
+
+                            <div class="pipeline-step">
+                                <span class="pipeline-number">05</span>
+
+                                <div class="pipeline-info">
+                                    <strong>Generate</strong>
+                                    <small>Content generation</small>
+                                </div>
+
+                                <span class="pipeline-status">○</span>
+                            </div>
+
+
+                            <div class="pipeline-line"></div>
+
+
+                            <div class="pipeline-step">
+                                <span class="pipeline-number">06</span>
+
+                                <div class="pipeline-info">
+                                    <strong>Publish</strong>
+                                    <small>Automated publishing</small>
+                                </div>
+
+                                <span class="pipeline-status">○</span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- System Health -->
+                    <section class="panel health-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <span class="panel-eyebrow">INFRASTRUCTURE</span>
+                                <h3>System Health</h3>
+                            </div>
+
+                            <span class="health-score">
+                                98%
+                            </span>
+
+                        </div>
+
+
+                        <div class="health-list">
+
+                            <div class="health-item">
+                                <div>
+                                    <strong>News Sources</strong>
+                                    <small>12 / 12 online</small>
+                                </div>
+
+                                <span class="health-ok">Operational</span>
+                            </div>
+
+
+                            <div class="health-item">
+                                <div>
+                                    <strong>AI Engine</strong>
+                                    <small>Response time 1.2s</small>
+                                </div>
+
+                                <span class="health-ok">Operational</span>
+                            </div>
+
+
+                            <div class="health-item">
+                                <div>
+                                    <strong>Database</strong>
+                                    <small>PostgreSQL</small>
+                                </div>
+
+                                <span class="health-ok">Operational</span>
+                            </div>
+
+
+                            <div class="health-item">
+                                <div>
+                                    <strong>Publishing</strong>
+                                    <small>3 queued</small>
+                                </div>
+
+                                <span class="health-warning">Busy</span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- Stories Section -->
+                <section class="panel stories-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="panel-eyebrow">INTELLIGENCE</span>
+                            <h3>Top Stories</h3>
+                        </div>
+
+                        <button class="text-button">
+                            View all →
+                        </button>
+
+                    </div>
+
+
+                    <div class="stories-table">
+
+                        <!-- Table Header -->
+                        <div class="story-row story-header">
+
+                            <span>STORY</span>
+                            <span>CONFIDENCE</span>
+                            <span>IMPORTANCE</span>
+                            <span>TREND</span>
+                            <span>STATUS</span>
+                            <span></span>
+
+                        </div>
+
+
+                        <!-- Story 1 -->
+                        <div class="story-row">
+
+                            <div class="story-title">
+
+                                <span class="story-rank">01</span>
+
+                                <div>
+                                    <strong>
+                                        India announces major policy changes
+                                    </strong>
+
+                                    <small>
+                                        11 sources · 8 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="score">
+                                <span>94</span>
+                                <small>/100</small>
+                            </div>
+
+
+                            <div class="score high">
+                                97
+                            </div>
+
+
+                            <div class="trend rising">
+                                ↑ Rising
+                            </div>
+
+
+                            <div>
+                                <span class="verified-badge">
+                                    Verified
+                                </span>
+                            </div>
+
+
+                            <button class="row-action">
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <!-- Story 2 -->
+                        <div class="story-row">
+
+                            <div class="story-title">
+
+                                <span class="story-rank">02</span>
+
+                                <div>
+                                    <strong>
+                                        RBI releases latest economic update
+                                    </strong>
+
+                                    <small>
+                                        8 sources · 14 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="score">
+                                <span>91</span>
+                                <small>/100</small>
+                            </div>
+
+
+                            <div class="score high">
+                                89
+                            </div>
+
+
+                            <div class="trend rising">
+                                ↑ Rising
+                            </div>
+
+
+                            <div>
+                                <span class="verified-badge">
+                                    Verified
+                                </span>
+                            </div>
+
+
+                            <button class="row-action">
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <!-- Story 3 -->
+                        <div class="story-row">
+
+                            <div class="story-title">
+
+                                <span class="story-rank">03</span>
+
+                                <div>
+                                    <strong>
+                                        New technology initiative gains attention
+                                    </strong>
+
+                                    <small>
+                                        6 sources · 21 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="score">
+                                <span>86</span>
+                                <small>/100</small>
+                            </div>
+
+
+                            <div class="score">
+                                84
+                            </div>
+
+
+                            <div class="trend">
+                                → Stable
+                            </div>
+
+
+                            <div>
+                                <span class="review-badge">
+                                    Reviewing
+                                </span>
+                            </div>
+
+
+                            <button class="row-action">
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <!-- Story 4 -->
+                        <div class="story-row">
+
+                            <div class="story-title">
+
+                                <span class="story-rank">04</span>
+
+                                <div>
+                                    <strong>
+                                        Major market movement reported
+                                    </strong>
+
+                                    <small>
+                                        9 sources · 32 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="score">
+                                <span>82</span>
+                                <small>/100</small>
+                            </div>
+
+
+                            <div class="score">
+                                78
+                            </div>
+
+
+                            <div class="trend rising">
+                                ↑ Rising
+                            </div>
+
+
+                            <div>
+                                <span class="verified-badge">
+                                    Verified
+                                </span>
+                            </div>
+
+
+                            <button class="row-action">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Bottom Grid -->
+                <div class="bottom-grid">
+
+
+                    <!-- Trending -->
+                    <section class="panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <span class="panel-eyebrow">REAL-TIME</span>
+                                <h3>Trending Topics</h3>
+                            </div>
+
+                        </div>
+
+
+                        <div class="trend-list">
+
+                            <div class="trend-item">
+                                <span class="trend-position">01</span>
+
+                                <div class="trend-content">
+                                    <strong>Indian Economy</strong>
+                                    <small>+42% interest</small>
+                                </div>
+
+                                <span class="trend-arrow">↗</span>
+                            </div>
+
+
+                            <div class="trend-item">
+                                <span class="trend-position">02</span>
+
+                                <div class="trend-content">
+                                    <strong>Technology</strong>
+                                    <small>+31% interest</small>
+                                </div>
+
+                                <span class="trend-arrow">↗</span>
+                            </div>
+
+
+                            <div class="trend-item">
+                                <span class="trend-position">03</span>
+
+                                <div class="trend-content">
+                                    <strong>Politics</strong>
+                                    <small>+24% interest</small>
+                                </div>
+
+                                <span class="trend-arrow">↗</span>
+                            </div>
+
+
+                            <div class="trend-item">
+                                <span class="trend-position">04</span>
+
+                                <div class="trend-content">
+                                    <strong>Business</strong>
+                                    <small>+18% interest</small>
+                                </div>
+
+                                <span class="trend-arrow">↗</span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Publishing Queue -->
+                    <section class="panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <span class="panel-eyebrow">AUTOMATION</span>
+                                <h3>Publishing Queue</h3>
+                            </div>
+
+                            <span class="queue-count">3</span>
+
+                        </div>
+
+
+                        <div class="queue-list">
+
+                            <div class="queue-item">
+
+                                <div class="queue-icon">✎</div>
+
+                                <div class="queue-content">
+                                    <strong>Economic Policy Update</strong>
+                                    <small>Ready for publishing</small>
+                                </div>
+
+                                <span class="queue-status ready">
+                                    Ready
+                                </span>
+
+                            </div>
+
+
+                            <div class="queue-item">
+
+                                <div class="queue-icon">✎</div>
+
+                                <div class="queue-content">
+                                    <strong>Technology News Brief</strong>
+                                    <small>Scheduled · 14:30</small>
+                                </div>
+
+                                <span class="queue-status scheduled">
+                                    Scheduled
+                                </span>
+
+                            </div>
+
+
+                            <div class="queue-item">
+
+                                <div class="queue-icon">✎</div>
+
+                                <div class="queue-content">
+                                    <strong>Market Daily Report</strong>
+                                    <small>Quality check</small>
+                                </div>
+
+                                <span class="queue-status review">
+                                    Review
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
