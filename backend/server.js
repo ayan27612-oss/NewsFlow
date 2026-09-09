@@ -1,10 +1,10 @@
 const http = require("http");
+const healthCheck = require("./routes/health");
 
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
-  res.setHeader("Content-Type", "application/json");
-
+  // CORS
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Methods",
@@ -12,27 +12,25 @@ const server = http.createServer((req, res) => {
   );
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
+  // Handle browser preflight requests
   if (req.method === "OPTIONS") {
     res.writeHead(204);
     res.end();
     return;
   }
 
+  // Health check route
   if (req.method === "GET" && req.url === "/api/health") {
-    res.writeHead(200);
-    res.end(
-      JSON.stringify({
-        success: true,
-        message: "NewsFlow backend is running",
-        status: "healthy",
-        timestamp: new Date().toISOString()
-      })
-    );
+    healthCheck(req, res);
     return;
   }
 
+  // API root
   if (req.method === "GET" && req.url === "/api") {
-    res.writeHead(200);
+    res.writeHead(200, {
+      "Content-Type": "application/json"
+    });
+
     res.end(
       JSON.stringify({
         success: true,
@@ -40,10 +38,15 @@ const server = http.createServer((req, res) => {
         version: "1.0.0"
       })
     );
+
     return;
   }
 
-  res.writeHead(404);
+  // 404
+  res.writeHead(404, {
+    "Content-Type": "application/json"
+  });
+
   res.end(
     JSON.stringify({
       success: false,
