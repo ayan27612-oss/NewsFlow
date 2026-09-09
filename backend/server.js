@@ -3,10 +3,8 @@ const http = require("http");
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
-  // Allow JSON responses
   res.setHeader("Content-Type", "application/json");
 
-  // CORS
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Methods",
@@ -14,14 +12,12 @@ const server = http.createServer((req, res) => {
   );
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  // Handle browser preflight requests
   if (req.method === "OPTIONS") {
     res.writeHead(204);
     res.end();
     return;
   }
 
-  // Health check
   if (req.method === "GET" && req.url === "/api/health") {
     res.writeHead(200);
     res.end(
@@ -35,7 +31,6 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // API root
   if (req.method === "GET" && req.url === "/api") {
     res.writeHead(200);
     res.end(
@@ -48,7 +43,6 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // 404
   res.writeHead(404);
   res.end(
     JSON.stringify({
