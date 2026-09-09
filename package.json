@@ -1,0 +1,17 @@
+{
+  "name": "newsflow",
+  "version": "1.0.0",
+  "description": "AI-powered news monitoring and content automation platform",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "keywords": [
+    "news",
+    "ai",
+    "automation",
+    "news-monitoring"
+  ],
+  "author": "",
+  "license": "MIT"
+}
